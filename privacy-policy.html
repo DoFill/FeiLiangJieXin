@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartyForge Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #faf8f5;
+            --card: #ffffff;
+            --text: #1f1d1b;
+            --muted: #5f5a55;
+            --primary: #e07a4a;
+            --secondary: #4a90a4;
+            --border: #eaded4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.65;
+        }
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 32px 18px 48px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #fff7ef, #ffffff);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 14px 36px rgba(90, 55, 35, 0.08);
+        }
+
+        section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            margin-top: 18px;
+            padding: 22px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            color: var(--primary);
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            color: var(--secondary);
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            margin: 10px 0 0;
+            padding-left: 22px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .meta,
+        .muted {
+            color: var(--muted);
+        }
+
+        a {
+            color: var(--secondary);
+            word-break: break-word;
+        }
+
+        code {
+            background: #f6eee8;
+            border-radius: 6px;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>PartyForge Privacy Policy</h1>
+            <p class="meta"><strong>Effective date:</strong> June 12, 2026</p>
+            <p>
+                PartyForge ("the app", "we", "our", or "us") is an offline party-game toolkit for Android.
+                This Privacy Policy explains what information the app handles, how it is stored, and how you can contact us.
+            </p>
+        </header>
+
+        <section>
+            <h2>Privacy Summary</h2>
+            <ul>
+                <li>No account or login is required.</li>
+                <li>No ads are shown in the app.</li>
+                <li>No analytics or tracking SDKs are used.</li>
+                <li>The app does not request internet access.</li>
+                <li>We do not collect, sell, or share personal data.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Information We Collect</h2>
+            <p>
+                We do not collect personal information from users. The app does not send scores, player names,
+                settings, history, device identifiers, usage activity, or any other app data to us or to a server operated by us.
+            </p>
+            <p>
+                PartyForge is designed to work offline and does not require a network connection.
+            </p>
+        </section>
+
+        <section>
+            <h2>Information Stored Locally on Your Device</h2>
+            <p>
+                To provide its features, the app stores some information locally on your device using Android app storage
+                technologies such as Room and DataStore. This local information may include:
+            </p>
+            <ul>
+                <li>Scoreboards, player names, scores, rounds, and score actions.</li>
+                <li>Activity history, such as completed scoreboards, dice rolls, wheel spins, random picks, timer completions, and word prompts shown.</li>
+                <li>Spin wheel segment labels.</li>
+                <li>Word-game favorites.</li>
+                <li>App settings, including theme, sound effects, haptics, and large text preferences.</li>
+            </ul>
+            <p>
+                This data is used only to make the app features work on your device.
+            </p>
+        </section>
+
+        <section>
+            <h2>Android Backup and Device Transfer</h2>
+            <p>
+                PartyForge allows Android system backup and device transfer for app preferences and local databases.
+                If Android backup is enabled on your device, your app data may be backed up by the Android operating system
+                to your Google account according to your device settings and Google's policies.
+            </p>
+            <p>
+                We do not operate this backup service and we do not receive access to your backed-up app data.
+            </p>
+        </section>
+
+        <section>
+            <h2>Permissions</h2>
+            <p>
+                PartyForge does not request user-facing sensitive permissions such as internet, location, camera,
+                microphone, contacts, storage/media access, notifications, Bluetooth, or advertising ID.
+            </p>
+            <p>
+                The app blocks common unnecessary permissions in its Android manifest. The only expected merged
+                <code>uses-permission</code> is an internal AndroidX signature-level permission:
+                <code>com.partyforge.offlinekit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>.
+                This permission is used internally by Android libraries and is not a user-granted permission.
+            </p>
+            <p>
+                Optional timer sound uses Android <code>ToneGenerator</code>, and haptic feedback uses
+                <code>View.performHapticFeedback()</code>. These features do not require additional user permissions.
+            </p>
+        </section>
+
+        <section>
+            <h2>Data Sharing</h2>
+            <p>
+                We do not share personal data with third parties. The app does not contain advertising SDKs,
+                analytics SDKs, social login, cloud sync, or third-party tracking services.
+            </p>
+        </section>
+
+        <section>
+            <h2>Data Retention and Deletion</h2>
+            <p>
+                Local app data remains on your device until you delete it, clear it in the app where available,
+                clear the app's storage through Android system settings, or uninstall the app.
+            </p>
+            <ul>
+                <li>You can clear activity history inside the app from the History screen or Settings.</li>
+                <li>You can remove all local app data by uninstalling PartyForge or clearing app storage in Android settings.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>
+                PartyForge is intended for general audiences and family-friendly use. We do not knowingly collect
+                personal information from children or from any other users.
+            </p>
+        </section>
+
+        <section>
+            <h2>Security</h2>
+            <p>
+                Because PartyForge does not send app data to us, there is no server-side account or cloud database managed by us.
+                Local app data is protected by the standard security features of your Android device and operating system.
+            </p>
+        </section>
+
+        <section>
+            <h2>Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy if the app changes or if legal, platform, or operational requirements change.
+                The effective date at the top of this page will be updated when changes are made.
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                If you have questions about this Privacy Policy or PartyForge's privacy practices, contact us at:
+                <a href="mailto:merilynsiangco0@gmail.com">merilynsiangco0@gmail.com</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
